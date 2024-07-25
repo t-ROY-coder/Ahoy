@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://wsckcvbsk3un"]
 
-[ext_resource type="Texture2D" uid="uid://dy0i658p0qlnk" path="res://assets/Palm Tree Island/Sprites/Background/Big Clouds.png" id="1_y8grp"]
+[ext_resource type="Texture2D" uid="uid://d2yy47kjkp6ob" path="res://assets/Palm Tree Island/Sprites/Background/Big Clouds.png" id="1_y8grp"]
 
 [node name="Big Clouds" type="AnimatableBody2D"]
 

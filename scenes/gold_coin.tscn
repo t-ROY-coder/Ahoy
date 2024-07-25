@@ -1,14 +1,14 @@
 [gd_scene load_steps=15 format=3 uid="uid://vf5guht80kdj"]
 
 [ext_resource type="Script" path="res://scripts/gold_coin.gd" id="1_ch2il"]
-[ext_resource type="Texture2D" uid="uid://bb3uk766njmwe" path="res://assets/Pirate Treasure/Sprites/Gold Coin/01.png" id="1_tdhrr"]
-[ext_resource type="Texture2D" uid="uid://b48it2nhwo64y" path="res://assets/Pirate Treasure/Sprites/Gold Coin/02.png" id="2_yv5lk"]
-[ext_resource type="Texture2D" uid="uid://boxxgdixfi4qb" path="res://assets/Pirate Treasure/Sprites/Gold Coin/03.png" id="3_5n22w"]
-[ext_resource type="Texture2D" uid="uid://xy6ffavletww" path="res://assets/Pirate Treasure/Sprites/Gold Coin/04.png" id="4_q8t08"]
-[ext_resource type="Texture2D" uid="uid://36kpd2ffgmip" path="res://assets/Pirate Treasure/Sprites/Coin Effect/01.png" id="5_ohgjw"]
-[ext_resource type="Texture2D" uid="uid://bmrgpyde7msgx" path="res://assets/Pirate Treasure/Sprites/Coin Effect/02.png" id="6_cr0iq"]
-[ext_resource type="Texture2D" uid="uid://bnreirt3qdh4t" path="res://assets/Pirate Treasure/Sprites/Coin Effect/03.png" id="7_ygb3a"]
-[ext_resource type="AudioStream" uid="uid://bt2x6bm4gpi2i" path="res://assets/sounds/coin.wav" id="9_hi34m"]
+[ext_resource type="Texture2D" uid="uid://jc566d1vxtbg" path="res://assets/Pirate Treasure/Sprites/Gold Coin/01.png" id="1_tdhrr"]
+[ext_resource type="Texture2D" uid="uid://bupepcuvi20ib" path="res://assets/Pirate Treasure/Sprites/Gold Coin/02.png" id="2_yv5lk"]
+[ext_resource type="Texture2D" uid="uid://ctf1jhskt1c5s" path="res://assets/Pirate Treasure/Sprites/Gold Coin/03.png" id="3_5n22w"]
+[ext_resource type="Texture2D" uid="uid://pati6q7krcv7" path="res://assets/Pirate Treasure/Sprites/Gold Coin/04.png" id="4_q8t08"]
+[ext_resource type="Texture2D" uid="uid://brksoho8mqnhh" path="res://assets/Pirate Treasure/Sprites/Coin Effect/01.png" id="5_ohgjw"]
+[ext_resource type="Texture2D" uid="uid://77fbkicfi1ua" path="res://assets/Pirate Treasure/Sprites/Coin Effect/02.png" id="6_cr0iq"]
+[ext_resource type="Texture2D" uid="uid://tx1urjbj6ty8" path="res://assets/Pirate Treasure/Sprites/Coin Effect/03.png" id="7_ygb3a"]
+[ext_resource type="AudioStream" uid="uid://b2bfb0myv86gs" path="res://assets/sounds/coin.wav" id="9_hi34m"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8fq5a"]
 animations = [{
