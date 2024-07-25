@@ -7,12 +7,10 @@ var is_turning = false
 
 func _process(delta):
 	if Input.is_action_just_pressed("interact") && is_reachable:
-		print("interact start")
 		is_turning = true
 		animated_sprite.play("turn")
 	
 	if (Input.is_action_just_released("interact") || !is_reachable) && animated_sprite.animation == "turn":
-		print("interact stop")
 		is_turning = false
 		animated_sprite.play("idle")
 

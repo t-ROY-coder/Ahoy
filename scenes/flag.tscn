@@ -1,14 +1,14 @@
 [gd_scene load_steps=11 format=3 uid="uid://xjadsubjjki7"]
 
-[ext_resource type="Texture2D" uid="uid://bbtyrdnt5ny3j" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 01.png" id="1_gr8aw"]
-[ext_resource type="Texture2D" uid="uid://crsd8nwcsngwo" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 02.png" id="2_3plgn"]
-[ext_resource type="Texture2D" uid="uid://c7fn10m3xymke" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 03.png" id="3_pncy0"]
-[ext_resource type="Texture2D" uid="uid://c4el1a0rpkfcw" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 04.png" id="4_5dq1t"]
-[ext_resource type="Texture2D" uid="uid://dxbb4swo4m1tc" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 05.png" id="5_tus4q"]
-[ext_resource type="Texture2D" uid="uid://cgl8mrw7jbsir" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 06.png" id="6_dhs6f"]
-[ext_resource type="Texture2D" uid="uid://b0drx6iyvhdug" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 07.png" id="7_m4vxa"]
-[ext_resource type="Texture2D" uid="uid://c0k123ueqe7b3" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 08.png" id="8_1jtca"]
-[ext_resource type="Texture2D" uid="uid://cxryxqv4kogdk" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 09.png" id="9_5uapy"]
+[ext_resource type="Texture2D" uid="uid://civnushyo4td4" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 01.png" id="1_gr8aw"]
+[ext_resource type="Texture2D" uid="uid://dl2gql752vve2" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 02.png" id="2_3plgn"]
+[ext_resource type="Texture2D" uid="uid://d2klg408g7ki5" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 03.png" id="3_pncy0"]
+[ext_resource type="Texture2D" uid="uid://4mfom7x1yn8b" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 04.png" id="4_5dq1t"]
+[ext_resource type="Texture2D" uid="uid://bi5s77fx07tob" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 05.png" id="5_tus4q"]
+[ext_resource type="Texture2D" uid="uid://b20ouwe6bd6dd" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 06.png" id="6_dhs6f"]
+[ext_resource type="Texture2D" uid="uid://l64gwh70rbdv" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 07.png" id="7_m4vxa"]
+[ext_resource type="Texture2D" uid="uid://cmrlnd52fdmcn" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 08.png" id="8_1jtca"]
+[ext_resource type="Texture2D" uid="uid://d4mbjwrlpyyov" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 09.png" id="9_5uapy"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rv14n"]
 animations = [{
