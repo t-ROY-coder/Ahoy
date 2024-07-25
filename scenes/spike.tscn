@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bxsvuuai8qebu"]
 
-[ext_resource type="Texture2D" uid="uid://bxvaws05rrpny" path="res://assets/Palm Tree Island/Sprites/Objects/Spikes/Spikes.png" id="1_nvj0v"]
+[ext_resource type="Texture2D" uid="uid://bvq3653vysrqj" path="res://assets/Palm Tree Island/Sprites/Objects/Spikes/Spikes.png" id="1_nvj0v"]
 [ext_resource type="PackedScene" uid="uid://cw20uufovqq6b" path="res://scenes/killzone.tscn" id="2_biish"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_18yg8"]

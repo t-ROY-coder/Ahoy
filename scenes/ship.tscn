@@ -1,32 +1,32 @@
-[gd_scene load_steps=32 format=3 uid="uid://c3880a0r0jfi3"]
+[gd_scene load_steps=37 format=3 uid="uid://c3880a0r0jfi3"]
 
 [ext_resource type="Script" path="res://scripts/ship.gd" id="1_cegqg"]
-[ext_resource type="Texture2D" uid="uid://bqlhdm0s1fyud" path="res://assets/Merchant Ship/Sprites/Ship/Ship/Idle/1.png" id="1_t3cuf"]
-[ext_resource type="Texture2D" uid="uid://c3lg0md1rok2b" path="res://assets/Merchant Ship/Sprites/Ship/Ship/Idle/2.png" id="2_62jul"]
-[ext_resource type="Texture2D" uid="uid://koaxrv55x0n5" path="res://assets/Merchant Ship/Sprites/Ship/Ship/Idle/3.png" id="3_uftk7"]
-[ext_resource type="Texture2D" uid="uid://bu8gb45u6m7cc" path="res://assets/Merchant Ship/Sprites/Ship/Ship/Idle/4.png" id="4_45sqt"]
-[ext_resource type="Texture2D" uid="uid://dtrhb5qjwspmt" path="res://assets/Merchant Ship/Sprites/Ship/Ship/Idle/5.png" id="5_xny48"]
-[ext_resource type="Texture2D" uid="uid://bg5bnh7wkl6f6" path="res://assets/Merchant Ship/Sprites/Ship/Ship/Idle/6.png" id="6_4y88n"]
-[ext_resource type="Texture2D" uid="uid://d3ybehh3u0tbo" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Transition to No Wind/1.png" id="7_3knho"]
-[ext_resource type="Texture2D" uid="uid://l8v46j710os8" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Transition to No Wind/2.png" id="8_sv6v5"]
-[ext_resource type="Texture2D" uid="uid://c8qatxbi2pa1x" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Transition to No Wind/3.png" id="9_jonja"]
-[ext_resource type="Texture2D" uid="uid://xqeiolq1elpn" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/1.png" id="10_soouv"]
-[ext_resource type="Texture2D" uid="uid://pxrnwy6gkq5" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/2.png" id="11_hdyq2"]
-[ext_resource type="Texture2D" uid="uid://d4idc3ndwpqq2" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/3.png" id="12_0eb71"]
-[ext_resource type="Texture2D" uid="uid://dy10m0sh03xbx" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/4.png" id="13_aa7s8"]
-[ext_resource type="Texture2D" uid="uid://cc0ehkhisrhmq" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/5.png" id="14_0ddex"]
-[ext_resource type="Texture2D" uid="uid://dd5wkr07x53k4" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/6.png" id="15_vowq5"]
-[ext_resource type="Texture2D" uid="uid://diyncbhx56rpu" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/7.png" id="16_rg1lq"]
-[ext_resource type="Texture2D" uid="uid://dsf6a35hqr54x" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/8.png" id="17_oyf5p"]
-[ext_resource type="Texture2D" uid="uid://c0uq84a40idy3" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Transition to Wind/1.png" id="18_5fhi6"]
-[ext_resource type="Texture2D" uid="uid://c8lx3b1rf4jxh" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Transition to Wind/2.png" id="19_qarkd"]
-[ext_resource type="Texture2D" uid="uid://b2jw8q3nuifpf" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Transition to Wind/3.png" id="20_vt82p"]
-[ext_resource type="Texture2D" uid="uid://b01wagxxrnoqy" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Wind/1.png" id="21_f4uxc"]
-[ext_resource type="Texture2D" uid="uid://dkgaegqof3g3l" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Wind/2.png" id="22_2rqen"]
-[ext_resource type="Texture2D" uid="uid://bongdd5res3ro" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Wind/3.png" id="23_4ckga"]
-[ext_resource type="Texture2D" uid="uid://0cok3g5iqscv" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Wind/4.png" id="24_lgc4q"]
-[ext_resource type="Texture2D" uid="uid://xp7b7h84ek3d" path="res://assets/Merchant Ship/Sprites/Ship/Anchor/2.png" id="25_g0oto"]
-[ext_resource type="Texture2D" uid="uid://bob65goprx442" path="res://assets/Merchant Ship/Sprites/Ship/Anchor/1.png" id="26_n2080"]
+[ext_resource type="Texture2D" uid="uid://cqbpla2ahwc0t" path="res://assets/Merchant Ship/Sprites/Ship/Ship/Idle/1.png" id="1_t3cuf"]
+[ext_resource type="Texture2D" uid="uid://b4q15dd5ykt8s" path="res://assets/Merchant Ship/Sprites/Ship/Ship/Idle/2.png" id="2_62jul"]
+[ext_resource type="Texture2D" uid="uid://c83mk3c4dsh7m" path="res://assets/Merchant Ship/Sprites/Ship/Ship/Idle/3.png" id="3_uftk7"]
+[ext_resource type="Texture2D" uid="uid://b8htwqcwh6ada" path="res://assets/Merchant Ship/Sprites/Ship/Ship/Idle/4.png" id="4_45sqt"]
+[ext_resource type="Texture2D" uid="uid://2fdsy457reki" path="res://assets/Merchant Ship/Sprites/Ship/Ship/Idle/5.png" id="5_xny48"]
+[ext_resource type="Texture2D" uid="uid://cp8nrqm2ta4at" path="res://assets/Merchant Ship/Sprites/Ship/Ship/Idle/6.png" id="6_4y88n"]
+[ext_resource type="Texture2D" uid="uid://b8t6v4vdfbuvu" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Transition to No Wind/1.png" id="7_3knho"]
+[ext_resource type="Texture2D" uid="uid://hplg5j87b06w" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Transition to No Wind/2.png" id="8_sv6v5"]
+[ext_resource type="Texture2D" uid="uid://iwogejqrh7w2" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Transition to No Wind/3.png" id="9_jonja"]
+[ext_resource type="Texture2D" uid="uid://dackyrkh2687s" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/1.png" id="10_soouv"]
+[ext_resource type="Texture2D" uid="uid://dqeegij54w8e1" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/2.png" id="11_hdyq2"]
+[ext_resource type="Texture2D" uid="uid://dejvvimcian46" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/3.png" id="12_0eb71"]
+[ext_resource type="Texture2D" uid="uid://bnykcy2odv7xt" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/4.png" id="13_aa7s8"]
+[ext_resource type="Texture2D" uid="uid://cwevm5sxpg1sr" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/5.png" id="14_0ddex"]
+[ext_resource type="Texture2D" uid="uid://dmdvsn6457h3v" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/6.png" id="15_vowq5"]
+[ext_resource type="Texture2D" uid="uid://cpwv4l8v0dqax" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/7.png" id="16_rg1lq"]
+[ext_resource type="Texture2D" uid="uid://cit1qbnk4ses3" path="res://assets/Merchant Ship/Sprites/Ship/Sail/No Wind/8.png" id="17_oyf5p"]
+[ext_resource type="Texture2D" uid="uid://cv5dqwcpm78a" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Transition to Wind/1.png" id="18_5fhi6"]
+[ext_resource type="Texture2D" uid="uid://bson6t715ainj" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Transition to Wind/2.png" id="19_qarkd"]
+[ext_resource type="Texture2D" uid="uid://bgxfo117m62dy" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Transition to Wind/3.png" id="20_vt82p"]
+[ext_resource type="Texture2D" uid="uid://chjykvqs1ohsp" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Wind/1.png" id="21_f4uxc"]
+[ext_resource type="Texture2D" uid="uid://s7yvkh33pblg" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Wind/2.png" id="22_2rqen"]
+[ext_resource type="Texture2D" uid="uid://1hs8a43mgvmd" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Wind/3.png" id="23_4ckga"]
+[ext_resource type="Texture2D" uid="uid://b3i03spwmi80x" path="res://assets/Merchant Ship/Sprites/Ship/Sail/Wind/4.png" id="24_lgc4q"]
+[ext_resource type="Texture2D" uid="uid://b3wy7x3d6mcd1" path="res://assets/Merchant Ship/Sprites/Ship/Anchor/2.png" id="25_g0oto"]
+[ext_resource type="Texture2D" uid="uid://dj3rrm5wx6f3u" path="res://assets/Merchant Ship/Sprites/Ship/Anchor/1.png" id="26_n2080"]
 [ext_resource type="PackedScene" uid="uid://rrdnxdcqanvn" path="res://scenes/helm.tscn" id="27_wwlge"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_frnwt"]
@@ -132,6 +132,62 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="GDScript" id="GDScript_lmuhp"]
+
+[sub_resource type="Animation" id="Animation_3f44f"]
+resource_name = "to_Wind"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"toWind", &"wind"]
+}
+
+[sub_resource type="Animation" id="Animation_kw4v8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle"]
+}
+
+[sub_resource type="Animation" id="Animation_4rndm"]
+resource_name = "from_Wind"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"fromWind", &"idle"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_autfi"]
+_data = {
+"RESET": SubResource("Animation_kw4v8"),
+"from_Wind": SubResource("Animation_4rndm"),
+"to_Wind": SubResource("Animation_3f44f")
+}
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ga7q"]
 size = Vector2(76, 21)
 
@@ -149,10 +205,14 @@ frame_progress = 0.270373
 [node name="Sail" type="AnimatedSprite2D" parent="."]
 position = Vector2(12, -37)
 sprite_frames = SubResource("SpriteFrames_q2ael")
-animation = &"fromWind"
+animation = &"idle"
 autoplay = "idle"
-frame = 2
-frame_progress = 1.0
+script = SubResource("GDScript_lmuhp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sail"]
+libraries = {
+"": SubResource("AnimationLibrary_autfi")
+}
 
 [node name="Chain" type="Sprite2D" parent="."]
 position = Vector2(-20, -1)
