@@ -1,0 +1,53 @@
+[gd_scene load_steps=11 format=3 uid="uid://xjadsubjjki7"]
+
+[ext_resource type="Texture2D" uid="uid://bbtyrdnt5ny3j" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 01.png" id="1_gr8aw"]
+[ext_resource type="Texture2D" uid="uid://crsd8nwcsngwo" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 02.png" id="2_3plgn"]
+[ext_resource type="Texture2D" uid="uid://c7fn10m3xymke" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 03.png" id="3_pncy0"]
+[ext_resource type="Texture2D" uid="uid://c4el1a0rpkfcw" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 04.png" id="4_5dq1t"]
+[ext_resource type="Texture2D" uid="uid://dxbb4swo4m1tc" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 05.png" id="5_tus4q"]
+[ext_resource type="Texture2D" uid="uid://cgl8mrw7jbsir" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 06.png" id="6_dhs6f"]
+[ext_resource type="Texture2D" uid="uid://b0drx6iyvhdug" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 07.png" id="7_m4vxa"]
+[ext_resource type="Texture2D" uid="uid://c0k123ueqe7b3" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 08.png" id="8_1jtca"]
+[ext_resource type="Texture2D" uid="uid://cxryxqv4kogdk" path="res://assets/Palm Tree Island/Sprites/Objects/Flag/Flag 09.png" id="9_5uapy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rv14n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gr8aw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3plgn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_pncy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5dq1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tus4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dhs6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_m4vxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1jtca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_5uapy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Flag" type="StaticBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_rv14n")
+autoplay = "default"
+frame_progress = 0.553659

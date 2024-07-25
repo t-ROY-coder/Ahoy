@@ -1,0 +1,57 @@
+[gd_scene load_steps=10 format=3 uid="uid://drdes5lrx8moc"]
+
+[ext_resource type="Texture2D" uid="uid://b0fkk8inspykd" path="res://assets/Palm Tree Island/Sprites/Background/Water Reflect Big 01.png" id="1_231yd"]
+[ext_resource type="Texture2D" uid="uid://bp6y6wdnunbr6" path="res://assets/Palm Tree Island/Sprites/Background/Water Reflect Medium 01.png" id="1_gjs1i"]
+[ext_resource type="Texture2D" uid="uid://e2rkw2tujfwm" path="res://assets/Palm Tree Island/Sprites/Background/Water Reflect Big 02.png" id="2_k2s3m"]
+[ext_resource type="Texture2D" uid="uid://rw2qanurp0km" path="res://assets/Palm Tree Island/Sprites/Background/Water Reflect Medium 02.png" id="2_n14eh"]
+[ext_resource type="Texture2D" uid="uid://b7hii0fxpmlid" path="res://assets/Palm Tree Island/Sprites/Background/Water Reflect Medium 03.png" id="3_q6y32"]
+[ext_resource type="Texture2D" uid="uid://08eop8i1htv2" path="res://assets/Palm Tree Island/Sprites/Background/Water Reflect Big 03.png" id="3_vw5ua"]
+[ext_resource type="Texture2D" uid="uid://dv3s2kjbt10r" path="res://assets/Palm Tree Island/Sprites/Background/Water Reflect Medium 04.png" id="4_fe7a5"]
+[ext_resource type="Texture2D" uid="uid://d0jxlfuufow8o" path="res://assets/Palm Tree Island/Sprites/Background/Water Reflect Big 04.png" id="4_nds0i"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_17hxw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_231yd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_k2s3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vw5ua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_nds0i")
+}],
+"loop": true,
+"name": &"water_reflection_big",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gjs1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_n14eh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_q6y32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fe7a5")
+}],
+"loop": true,
+"name": &"water_reflection_medium",
+"speed": 10.0
+}]
+
+[node name="Water Reflection" type="AnimatableBody2D"]
+z_index = -2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_17hxw")
+animation = &"water_reflection_big"
+autoplay = "water_reflection_big"
+frame = 1
+frame_progress = 0.291701

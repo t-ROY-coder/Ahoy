@@ -1,0 +1,138 @@
+[gd_scene load_steps=22 format=3 uid="uid://xfajdns3gf47"]
+
+[ext_resource type="Texture2D" uid="uid://ctpcg5jew362o" path="res://assets/Merchant Ship/Sprites/Water/Water/Top/1.png" id="1_peb7i"]
+[ext_resource type="Texture2D" uid="uid://cdda5f1g1xfkc" path="res://assets/Merchant Ship/Sprites/Water/Water/Top/2.png" id="2_nm5s8"]
+[ext_resource type="Texture2D" uid="uid://b4ckq1mlx87h3" path="res://assets/Merchant Ship/Sprites/Water/Water/Top/3.png" id="3_snj35"]
+[ext_resource type="Texture2D" uid="uid://gj5iwtujqd4l" path="res://assets/Merchant Ship/Sprites/Water/Water/Top/4.png" id="4_mysn8"]
+[ext_resource type="Texture2D" uid="uid://vw08q4fpyvad" path="res://assets/Merchant Ship/Sprites/Water/Water/Bottom/1.png" id="5_aqsip"]
+[ext_resource type="Texture2D" uid="uid://btgjvnqel3v5e" path="res://assets/Merchant Ship/Sprites/Water/Reflexes 1/1.png" id="6_gnlkm"]
+[ext_resource type="Texture2D" uid="uid://cuy8rcwrmgm2" path="res://assets/Merchant Ship/Sprites/Water/Reflexes 1/2.png" id="7_ynpqd"]
+[ext_resource type="Texture2D" uid="uid://eo1o8rs04yud" path="res://assets/Merchant Ship/Sprites/Water/Reflexes 1/3.png" id="8_141vl"]
+[ext_resource type="Texture2D" uid="uid://b742pwrp0odd2" path="res://assets/Merchant Ship/Sprites/Water/Reflexes 1/4.png" id="9_87dhw"]
+[ext_resource type="Texture2D" uid="uid://b3j3dc0hseu8j" path="res://assets/Merchant Ship/Sprites/Water/Reflexes 1/5.png" id="10_05t5k"]
+[ext_resource type="Texture2D" uid="uid://cvwuosdw7okwc" path="res://assets/Merchant Ship/Sprites/Water/Reflexes 1/6.png" id="11_16i6u"]
+[ext_resource type="Texture2D" uid="uid://dkvyxcny1fafp" path="res://assets/Merchant Ship/Sprites/Water/Reflexes 2/1.png" id="12_keq7n"]
+[ext_resource type="Texture2D" uid="uid://bccxiniqxdbr" path="res://assets/Merchant Ship/Sprites/Water/Reflexes 2/2.png" id="13_ln0y7"]
+[ext_resource type="Texture2D" uid="uid://ia5beedqewfx" path="res://assets/Merchant Ship/Sprites/Water/Reflexes 2/3.png" id="14_5bosg"]
+[ext_resource type="Texture2D" uid="uid://bq241bojowdl4" path="res://assets/Merchant Ship/Sprites/Water/Reflexes 2/4.png" id="15_qla7c"]
+[ext_resource type="Texture2D" uid="uid://j7kopmd73cbc" path="res://assets/Merchant Ship/Sprites/Water/Reflexes 2/5.png" id="16_qvd23"]
+[ext_resource type="Texture2D" uid="uid://87sle30irbvl" path="res://assets/Merchant Ship/Sprites/Water/Reflexes 2/6.png" id="17_sygki"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_61al3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_peb7i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_nm5s8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_snj35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mysn8")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eqkf5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_aqsip")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lf6to"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_gnlkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ynpqd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_141vl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_87dhw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_05t5k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_16i6u")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xceq3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_keq7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ln0y7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_5bosg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_qla7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_qvd23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_sygki")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Water" type="Node2D"]
+z_index = 6
+
+[node name="Water Top" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_61al3")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.495414
+
+[node name="Water Bottom" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 32)
+sprite_frames = SubResource("SpriteFrames_eqkf5")
+autoplay = "default"
+
+[node name="Water Bottom2" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 64)
+sprite_frames = SubResource("SpriteFrames_eqkf5")
+autoplay = "default"
+
+[node name="Water Bottom3" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 96)
+sprite_frames = SubResource("SpriteFrames_eqkf5")
+autoplay = "default"
+
+[node name="Water Reflex 1" type="AnimatedSprite2D" parent="."]
+position = Vector2(-24, 4)
+sprite_frames = SubResource("SpriteFrames_lf6to")
+autoplay = "default"
+frame_progress = 0.521439
+
+[node name="Water Reflex 2" type="AnimatedSprite2D" parent="."]
+position = Vector2(22, 4)
+sprite_frames = SubResource("SpriteFrames_xceq3")
+autoplay = "default"
+frame_progress = 0.785588
