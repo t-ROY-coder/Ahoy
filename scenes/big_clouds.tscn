@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://wsckcvbsk3un"]
 
-[ext_resource type="Texture2D" uid="uid://d2yy47kjkp6ob" path="res://assets/Palm Tree Island/Sprites/Background/Big Clouds.png" id="1_y8grp"]
+[ext_resource type="Texture2D" uid="uid://el2618o023nq" path="res://assets/Palm Tree Island/Sprites/Background/Big Clouds.png" id="1_y8grp"]
 
 [node name="Big Clouds" type="AnimatableBody2D"]
 
@@ -13,4 +13,8 @@ texture = ExtResource("1_y8grp")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
 position = Vector2(896, 0)
+texture = ExtResource("1_y8grp")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(1343, 0)
 texture = ExtResource("1_y8grp")

@@ -3,13 +3,27 @@ extends CharacterBody2D
 
 const SPEED = 130.0
 const JUMP_VELOCITY = -300.0
+@onready var game_manager = %GameManager
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var is_level_finished = false
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var audio_stream_player = $AudioStreamPlayer2D
+@onready var visible_on_screen_notifier_2d = $VisibleOnScreenNotifier2D
+
+func finish_level():
+	print("LEVEL FINISHED!")
+	is_level_finished = true
 
 func _physics_process(delta):
+	
+	if (is_level_finished):
+		return
+	
+	if (position.x > game_manager.level_width):
+		finish_level()
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta

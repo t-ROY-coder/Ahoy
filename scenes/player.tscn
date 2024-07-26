@@ -118,10 +118,8 @@ script = ExtResource("1_ioyo3")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_mlxg7")
-animation = &"dead"
+animation = &"idle"
 autoplay = "idle"
-frame = 1
-frame_progress = 0.932757
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -9)
@@ -130,3 +128,7 @@ shape = SubResource("CapsuleShape2D_ivnif")
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("21_n0eoh")
 bus = &"SFX"
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-1.19209e-07, -18)
+scale = Vector2(3.85, 3.30909)
