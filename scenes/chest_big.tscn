@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://7rnecabgu1ma"]
+[gd_scene load_steps=18 format=3 uid="uid://7rnecabgu1ma"]
 
 [ext_resource type="Texture2D" uid="uid://b43s78m0ic232" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Close 01.png" id="1_haiwy"]
 [ext_resource type="Script" path="res://scripts/chest_big.gd" id="1_yv6sa"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bg6qwltlltqot" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Open 02.png" id="12_debpl"]
 [ext_resource type="Texture2D" uid="uid://d0xdmlprp6os8" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Open 08.png" id="13_7p1sf"]
 [ext_resource type="Texture2D" uid="uid://gekspok4o5dc" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Open 10.png" id="14_1kt51"]
+[ext_resource type="AudioStream" uid="uid://dc8p6355h87g6" path="res://assets/sounds/extra sounds/Fruit collect 1.wav" id="15_c3nfn"]
 [ext_resource type="AudioStream" uid="uid://d0v2fl1f8lows" path="res://assets/sounds/power_up.wav" id="15_gclab"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_drv7n"]
@@ -86,8 +87,12 @@ autoplay = "idle"
 position = Vector2(1, 5.5)
 shape = SubResource("RectangleShape2D_2olic")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="ChestOpenSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("15_gclab")
+bus = &"SFX"
+
+[node name="NoKeySound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_c3nfn")
 bus = &"SFX"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
