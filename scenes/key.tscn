@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bkldbllx0urm8" path="res://assets/Merchant Ship/Sprites/Chest Key/Effect/2.png" id="10_npw8p"]
 [ext_resource type="Texture2D" uid="uid://cmwhdx66l7naq" path="res://assets/Merchant Ship/Sprites/Chest Key/Effect/3.png" id="11_852xr"]
 [ext_resource type="Texture2D" uid="uid://8po771qirr6h" path="res://assets/Merchant Ship/Sprites/Chest Key/Effect/4.png" id="12_hq0au"]
-[ext_resource type="AudioStream" uid="uid://bowaket3jucl5" path="res://assets/sounds/coin.wav" id="13_buhat"]
+[ext_resource type="AudioStream" uid="uid://wb77jxvqsokj" path="res://assets/sounds/jump.wav" id="14_mi455"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qxyti"]
 animations = [{
@@ -204,7 +204,7 @@ autoplay = "idle"
 shape = SubResource("CapsuleShape2D_swt1b")
 
 [node name="PickupSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("13_buhat")
+stream = ExtResource("14_mi455")
 bus = &"SFX"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

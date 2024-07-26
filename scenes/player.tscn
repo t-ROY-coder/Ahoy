@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://yrbltfr3xup2"]
+[gd_scene load_steps=24 format=3 uid="uid://yrbltfr3xup2"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_ioyo3"]
 [ext_resource type="Texture2D" uid="uid://cykf5l52pn821" path="res://assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="1_lymbs"]
@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://cffdtb6eh0o8j" path="res://assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 04.png" id="10_sltc8"]
 [ext_resource type="Texture2D" uid="uid://b46miyu4w7on5" path="res://assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 05.png" id="11_338p8"]
 [ext_resource type="Texture2D" uid="uid://c8r6bt3urklmm" path="res://assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 06.png" id="12_wikyg"]
+[ext_resource type="AudioStream" uid="uid://7f4ulviq6cg8" path="res://assets/sounds/tap.wav" id="21_n0eoh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mlxg7"]
 animations = [{
@@ -125,3 +126,7 @@ frame_progress = 0.932757
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -9)
 shape = SubResource("CapsuleShape2D_ivnif")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("21_n0eoh")
+bus = &"SFX"

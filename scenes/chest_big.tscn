@@ -1,57 +1,22 @@
 [gd_scene load_steps=17 format=3 uid="uid://7rnecabgu1ma"]
 
 [ext_resource type="Texture2D" uid="uid://b43s78m0ic232" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Close 01.png" id="1_haiwy"]
+[ext_resource type="Script" path="res://scripts/chest_big.gd" id="1_yv6sa"]
 [ext_resource type="Texture2D" uid="uid://dnbbhwu1irbns" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Close 02.png" id="2_ukoeg"]
 [ext_resource type="Texture2D" uid="uid://b5p3dnmqwr1hu" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Close 03.png" id="3_f2kl5"]
 [ext_resource type="Texture2D" uid="uid://m76c7x78ktix" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Close 04.png" id="4_8008u"]
 [ext_resource type="Texture2D" uid="uid://bp7mnkn85p0ni" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Close 05.png" id="5_jmp22"]
 [ext_resource type="Texture2D" uid="uid://fjgjyxp4nqry" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Close 06.png" id="6_ytrhr"]
-[ext_resource type="Texture2D" uid="uid://b54pwc1tau2ph" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Close 07.png" id="7_x1ngl"]
 [ext_resource type="Texture2D" uid="uid://co1a5um8rs4an" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Close 08.png" id="8_wytko"]
-[ext_resource type="Texture2D" uid="uid://oyh5sdopu4p1" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Close 09.png" id="9_gqqdk"]
 [ext_resource type="Texture2D" uid="uid://dsbhdk6505pqe" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Close 10.png" id="10_f65fc"]
 [ext_resource type="Texture2D" uid="uid://fe25huo6tobs" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Open 01.png" id="11_xc053"]
 [ext_resource type="Texture2D" uid="uid://bg6qwltlltqot" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Open 02.png" id="12_debpl"]
 [ext_resource type="Texture2D" uid="uid://d0xdmlprp6os8" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Open 08.png" id="13_7p1sf"]
 [ext_resource type="Texture2D" uid="uid://gekspok4o5dc" path="res://assets/Palm Tree Island/Sprites/Objects/Chest/Chest Open 10.png" id="14_1kt51"]
+[ext_resource type="AudioStream" uid="uid://d0v2fl1f8lows" path="res://assets/sounds/power_up.wav" id="15_gclab"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_drv7n"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_haiwy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_ukoeg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_f2kl5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_8008u")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_jmp22")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_ytrhr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_x1ngl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_wytko")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_gqqdk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_f65fc")
-}],
-"loop": true,
-"name": &"default",
-"speed": 10.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_haiwy")
@@ -80,6 +45,29 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_haiwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ukoeg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f2kl5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8008u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jmp22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ytrhr")
+}],
+"loop": false,
+"name": &"open",
+"speed": 10.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2olic"]
@@ -87,13 +75,20 @@ size = Vector2(30, 23)
 
 [node name="Chest Big" type="Area2D"]
 collision_mask = 2
+script = ExtResource("1_yv6sa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_drv7n")
-animation = &"idle"
+animation = &"open"
 autoplay = "idle"
-frame_progress = 0.769537
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 5.5)
 shape = SubResource("RectangleShape2D_2olic")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_gclab")
+bus = &"SFX"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
