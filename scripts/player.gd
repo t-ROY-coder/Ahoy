@@ -3,6 +3,10 @@ extends CharacterBody2D
 
 const SPEED = 130.0
 const JUMP_VELOCITY = -300.0
+
+signal hp_changed
+signal died
+
 @onready var game_manager = %GameManager
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -61,3 +65,12 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	
+func take_damage(dmg):
+	set_hp(GameData.hp - dmg)
+
+func set_hp(newHp):
+	emit_signal("hp_changed", newHp)
+	GameData.hp = newHp
+	if GameData.hp <= 0:
+		emit_signal("died")

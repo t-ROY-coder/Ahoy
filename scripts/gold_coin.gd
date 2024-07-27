@@ -6,4 +6,3 @@ extends Area2D
 func _on_body_entered(body):
 	game_manager.add_point()
 	animation_player.play("pickup")
-	#score.update(game_manager.score)

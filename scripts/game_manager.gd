@@ -9,6 +9,7 @@ var level_width = 900
 
 func _ready():
 	gui.get_node("ColorRect").visible = false
+	gui.update_health(GameData.hp)
 
 func _process(delta):
 	if (player.is_level_finished):
@@ -23,3 +24,6 @@ func add_point():
 func add_key():
 	key_count += 1
 	print("KEY ACQUIRED!")
+
+func _on_player_hp_changed(newHp):
+	pass

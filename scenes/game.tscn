@@ -484,3 +484,5 @@ position = Vector2(-28, 47)
 
 [node name="Key" parent="Main" instance=ExtResource("20_logpp")]
 position = Vector2(499, -43)
+
+[connection signal="hp_changed" from="Main/Player" to="GameManager" method="_on_player_hp_changed"]
