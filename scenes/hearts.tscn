@@ -1,32 +1,35 @@
-[gd_scene load_steps=4 format=3 uid="uid://eunvdyg1j7oj"]
+[gd_scene load_steps=7 format=3 uid="uid://eunvdyg1j7oj"]
 
 [ext_resource type="Texture2D" uid="uid://d002kspvwci2p" path="res://assets/Wood and Paper UI/Sprites/Life Bars/Heart/Pixel Heart Sprite Sheet 32x32.png" id="1_gx1p1"]
 [ext_resource type="Script" path="res://scripts/hearts.gd" id="1_nqgt6"]
+[ext_resource type="PackedScene" uid="uid://ckamdefqc273c" path="res://scenes/heart.tscn" id="2_shgch"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_uulpw"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1nwhp"]
+resource_local_to_scene = true
 atlas = ExtResource("1_gx1p1")
-region = Rect2(0, 0, 32, 32)
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8avhg"]
+resource_local_to_scene = true
+atlas = ExtResource("1_gx1p1")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wh41b"]
+resource_local_to_scene = true
+atlas = ExtResource("1_gx1p1")
+region = Rect2(64, 0, 32, 32)
 
 [node name="Hearts" type="HBoxContainer"]
 script = ExtResource("1_nqgt6")
 
-[node name="Heart" type="TextureRect" parent="."]
-visible = false
+[node name="Heart" parent="." instance=ExtResource("2_shgch")]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-texture = SubResource("AtlasTexture_uulpw")
+texture = SubResource("AtlasTexture_1nwhp")
 
-[node name="Heart2" type="TextureRect" parent="."]
-visible = false
+[node name="Heart2" parent="." instance=ExtResource("2_shgch")]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-texture = SubResource("AtlasTexture_uulpw")
+texture = SubResource("AtlasTexture_8avhg")
 
-[node name="Heart3" type="TextureRect" parent="."]
-visible = false
+[node name="Heart3" parent="." instance=ExtResource("2_shgch")]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-texture = SubResource("AtlasTexture_uulpw")
+texture = SubResource("AtlasTexture_wh41b")

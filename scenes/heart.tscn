@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckamdefqc273c"]
+
+[ext_resource type="Texture2D" uid="uid://d002kspvwci2p" path="res://assets/Wood and Paper UI/Sprites/Life Bars/Heart/Pixel Heart Sprite Sheet 32x32.png" id="1_av0x1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uulpw"]
+resource_local_to_scene = true
+atlas = ExtResource("1_av0x1")
+region = Rect2(0, 0, 32, 32)
+
+[node name="Heart" type="TextureRect"]
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_uulpw")
