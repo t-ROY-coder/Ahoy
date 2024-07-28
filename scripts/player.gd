@@ -11,8 +11,10 @@ signal died
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
 var is_level_finished = false
 var is_game_over = false
+
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var audio_stream_player = $AudioStreamPlayer2D
 @onready var visible_on_screen_notifier_2d = $VisibleOnScreenNotifier2D
@@ -27,7 +29,7 @@ func game_over():
 
 func _physics_process(delta):
 	
-	if (is_level_finished || is_game_over):
+	if (is_level_finished || is_game_over || GameData.is_game_paused):
 		return
 	
 	if (position.x > game_manager.level_width):

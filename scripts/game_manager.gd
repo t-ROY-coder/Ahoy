@@ -12,6 +12,8 @@ func update_hp():
 	gui.update_health(GameData.hp)
 	
 func _ready():
+	if (GameData.is_game_paused):
+		gui.show_main_menu()
 	update_hp()
 
 func _process(delta):
