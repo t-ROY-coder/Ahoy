@@ -7,13 +7,20 @@ var level_width = 900
 @onready var gui = $GUI
 @onready var player = %Player
 
-func _ready():
-	gui.get_node("ColorRect").visible = false
+
+func update_hp():
 	gui.update_health(GameData.hp)
+	
+func _ready():
+	update_hp()
 
 func _process(delta):
-	if (player.is_level_finished):
+	if player.is_level_finished || player.is_game_over:
 		gui.get_node("ColorRect").visible = true
+		if (player.is_level_finished):
+			gui.on_level_complete(score)
+		if (player.is_game_over):
+			gui.on_game_over()
 
 
 func add_point():
@@ -24,6 +31,3 @@ func add_point():
 func add_key():
 	key_count += 1
 	print("KEY ACQUIRED!")
-
-func _on_player_hp_changed(newHp):
-	pass
